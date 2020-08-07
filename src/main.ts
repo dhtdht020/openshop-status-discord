@@ -90,9 +90,7 @@ export function getPayload(inputs: Inputs): Object {
     if (inputs.username) {
         discord_payload.username = inputs.username
     }
-    if (inputs.avatar_url) {
-        discord_payload.avatar_url = inputs.avatar_url
-    }
+    discord_payload.avatar_url = statusOpts[inputs.status].avatar_url
 
     return discord_payload
 }
