@@ -52,7 +52,7 @@ export function getPayload(inputs: Inputs): Object {
         embed.description = inputs.description
     }
     if (!inputs.nodetail) {
-        embed.title = statusOpts[inputs.status].status + (embed.title ? `: ${embed.title}` : '')
+        embed.title = statusOpts[inputs.status].avatar_url + (embed.title ? `: ${embed.title}` : '')
         embed.fields = [
             {
                 name: 'Repository',
